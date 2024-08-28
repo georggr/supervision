@@ -593,13 +593,6 @@
     Process Datasets
   </span>
   
-    
-  
-  
-    <span class="md-status md-status--new"></span>
-  
-
-  
 
       </a>
     </li>
@@ -1071,27 +1064,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../metrics/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Metrics
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../double_detection_filter/" class="md-nav__link">
         
   
@@ -1119,13 +1091,6 @@
   <span class="md-ellipsis">
     Utils
   </span>
-  
-    
-  
-  
-    <span class="md-status md-status--new"></span>
-  
-
   
 
       </a>
@@ -1194,13 +1159,6 @@
     Core
   </span>
   
-    
-  
-  
-    <span class="md-status md-status--new"></span>
-  
-
-  
 
       </a>
     </li>
@@ -1221,6 +1179,13 @@
   <span class="md-ellipsis">
     Annotators
   </span>
+  
+    
+  
+  
+    <span class="md-status md-status--new"></span>
+  
+
   
 
       </a>
@@ -1398,6 +1363,13 @@
     Inference Slicer
   </span>
   
+    
+  
+  
+    <span class="md-status md-status--new"></span>
+  
+
+  
 
       </a>
     </li>
@@ -1528,13 +1500,6 @@
     Core
   </span>
   
-    
-  
-  
-    <span class="md-status md-status--new"></span>
-  
-
-  
 
       </a>
     </li>
@@ -1595,7 +1560,7 @@
             
   
   <span class="md-ellipsis">
-    Utils
+    Metrics
   </span>
   
 
@@ -1604,6 +1569,101 @@
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            Metrics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/mean_average_precision/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    mAP
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--new"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metrics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Legacy Metrics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Utils
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8">
             <span class="md-nav__icon md-icon"></span>
             Utils
           </label>
@@ -1622,6 +1682,13 @@
   <span class="md-ellipsis">
     Video
   </span>
+  
+    
+  
+  
+    <span class="md-status md-status--new"></span>
+  
+
   
 
       </a>
@@ -1643,6 +1710,13 @@
   <span class="md-ellipsis">
     Image
   </span>
+  
+    
+  
+  
+    <span class="md-status md-status--new"></span>
+  
+
   
 
       </a>
@@ -1706,13 +1780,6 @@
   <span class="md-ellipsis">
     File
   </span>
-  
-    
-  
-  
-    <span class="md-status md-status--new"></span>
-  
-
   
 
       </a>
@@ -4860,10 +4927,10 @@ is either a NumPy array or a list of corresponding data.</p>
 <a id="__codelineno-0-1158" name="__codelineno-0-1158"></a><span class="sd">        from a segmentation model, the IoU mask is applied. Otherwise, box IoU is used.</span>
 <a id="__codelineno-0-1159" name="__codelineno-0-1159"></a>
 <a id="__codelineno-0-1160" name="__codelineno-0-1160"></a><span class="sd">        Args:</span>
-<a id="__codelineno-0-1161" name="__codelineno-0-1161"></a><span class="sd">            threshold (float, optional): The intersection-over-union threshold</span>
+<a id="__codelineno-0-1161" name="__codelineno-0-1161"></a><span class="sd">            threshold (float): The intersection-over-union threshold</span>
 <a id="__codelineno-0-1162" name="__codelineno-0-1162"></a><span class="sd">                to use for non-maximum suppression. I&#39;m the lower the value the more</span>
 <a id="__codelineno-0-1163" name="__codelineno-0-1163"></a><span class="sd">                restrictive the NMS becomes. Defaults to 0.5.</span>
-<a id="__codelineno-0-1164" name="__codelineno-0-1164"></a><span class="sd">            class_agnostic (bool, optional): Whether to perform class-agnostic</span>
+<a id="__codelineno-0-1164" name="__codelineno-0-1164"></a><span class="sd">            class_agnostic (bool): Whether to perform class-agnostic</span>
 <a id="__codelineno-0-1165" name="__codelineno-0-1165"></a><span class="sd">                non-maximum suppression. If True, the class_id of each detection</span>
 <a id="__codelineno-0-1166" name="__codelineno-0-1166"></a><span class="sd">                will be ignored. Defaults to False.</span>
 <a id="__codelineno-0-1167" name="__codelineno-0-1167"></a>
@@ -4915,9 +4982,9 @@ is either a NumPy array or a list of corresponding data.</p>
 <a id="__codelineno-0-1213" name="__codelineno-0-1213"></a><span class="sd">        Perform non-maximum merging on the current set of object detections.</span>
 <a id="__codelineno-0-1214" name="__codelineno-0-1214"></a>
 <a id="__codelineno-0-1215" name="__codelineno-0-1215"></a><span class="sd">        Args:</span>
-<a id="__codelineno-0-1216" name="__codelineno-0-1216"></a><span class="sd">            threshold (float, optional): The intersection-over-union threshold</span>
+<a id="__codelineno-0-1216" name="__codelineno-0-1216"></a><span class="sd">            threshold (float): The intersection-over-union threshold</span>
 <a id="__codelineno-0-1217" name="__codelineno-0-1217"></a><span class="sd">                to use for non-maximum merging. Defaults to 0.5.</span>
-<a id="__codelineno-0-1218" name="__codelineno-0-1218"></a><span class="sd">            class_agnostic (bool, optional): Whether to perform class-agnostic</span>
+<a id="__codelineno-0-1218" name="__codelineno-0-1218"></a><span class="sd">            class_agnostic (bool): Whether to perform class-agnostic</span>
 <a id="__codelineno-0-1219" name="__codelineno-0-1219"></a><span class="sd">                non-maximum merging. If True, the class_id of each detection</span>
 <a id="__codelineno-0-1220" name="__codelineno-0-1220"></a><span class="sd">                will be ignored. Defaults to False.</span>
 <a id="__codelineno-0-1221" name="__codelineno-0-1221"></a>
@@ -8999,9 +9066,9 @@ class_agnostic is False.</p>
 <a id="__codelineno-0-1213" name="__codelineno-0-1213"></a><span class="sd">    Perform non-maximum merging on the current set of object detections.</span>
 <a id="__codelineno-0-1214" name="__codelineno-0-1214"></a>
 <a id="__codelineno-0-1215" name="__codelineno-0-1215"></a><span class="sd">    Args:</span>
-<a id="__codelineno-0-1216" name="__codelineno-0-1216"></a><span class="sd">        threshold (float, optional): The intersection-over-union threshold</span>
+<a id="__codelineno-0-1216" name="__codelineno-0-1216"></a><span class="sd">        threshold (float): The intersection-over-union threshold</span>
 <a id="__codelineno-0-1217" name="__codelineno-0-1217"></a><span class="sd">            to use for non-maximum merging. Defaults to 0.5.</span>
-<a id="__codelineno-0-1218" name="__codelineno-0-1218"></a><span class="sd">        class_agnostic (bool, optional): Whether to perform class-agnostic</span>
+<a id="__codelineno-0-1218" name="__codelineno-0-1218"></a><span class="sd">        class_agnostic (bool): Whether to perform class-agnostic</span>
 <a id="__codelineno-0-1219" name="__codelineno-0-1219"></a><span class="sd">            non-maximum merging. If True, the class_id of each detection</span>
 <a id="__codelineno-0-1220" name="__codelineno-0-1220"></a><span class="sd">            will be ignored. Defaults to False.</span>
 <a id="__codelineno-0-1221" name="__codelineno-0-1221"></a>
@@ -9229,10 +9296,10 @@ If <code>class_id</code> is None and class_agnostic is False.</p>
 <a id="__codelineno-0-1158" name="__codelineno-0-1158"></a><span class="sd">    from a segmentation model, the IoU mask is applied. Otherwise, box IoU is used.</span>
 <a id="__codelineno-0-1159" name="__codelineno-0-1159"></a>
 <a id="__codelineno-0-1160" name="__codelineno-0-1160"></a><span class="sd">    Args:</span>
-<a id="__codelineno-0-1161" name="__codelineno-0-1161"></a><span class="sd">        threshold (float, optional): The intersection-over-union threshold</span>
+<a id="__codelineno-0-1161" name="__codelineno-0-1161"></a><span class="sd">        threshold (float): The intersection-over-union threshold</span>
 <a id="__codelineno-0-1162" name="__codelineno-0-1162"></a><span class="sd">            to use for non-maximum suppression. I&#39;m the lower the value the more</span>
 <a id="__codelineno-0-1163" name="__codelineno-0-1163"></a><span class="sd">            restrictive the NMS becomes. Defaults to 0.5.</span>
-<a id="__codelineno-0-1164" name="__codelineno-0-1164"></a><span class="sd">        class_agnostic (bool, optional): Whether to perform class-agnostic</span>
+<a id="__codelineno-0-1164" name="__codelineno-0-1164"></a><span class="sd">        class_agnostic (bool): Whether to perform class-agnostic</span>
 <a id="__codelineno-0-1165" name="__codelineno-0-1165"></a><span class="sd">            non-maximum suppression. If True, the class_id of each detection</span>
 <a id="__codelineno-0-1166" name="__codelineno-0-1166"></a><span class="sd">            will be ignored. Defaults to False.</span>
 <a id="__codelineno-0-1167" name="__codelineno-0-1167"></a>
