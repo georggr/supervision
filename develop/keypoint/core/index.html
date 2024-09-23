@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../assets/supervision-lenny.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.35">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.36">
     
     
       
@@ -30,7 +30,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.35f28582.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.06209087.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -1452,6 +1452,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../metrics/f1_score/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    F1 Score
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--new"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../detection/metrics/" class="md-nav__link">
         
   
@@ -2130,11 +2158,11 @@
         <p>The <code>sv.KeyPoints</code> class in the Supervision library standardizes results from
 various keypoint detection and pose estimation models into a consistent format. This
 class simplifies data manipulation and filtering, providing a uniform API for
-integration with Supervision <a href="/keypoint/annotators">keypoints annotators</a>.</p>
+integration with Supervision <a href="/latest/keypoint/annotators">keypoints annotators</a>.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="supervision.keypoint.core.KeyPoints--__tabbed_1_1" name="supervision.keypoint.core.KeyPoints--__tabbed_1" type="radio" /><input id="supervision.keypoint.core.KeyPoints--__tabbed_1_2" name="supervision.keypoint.core.KeyPoints--__tabbed_1" type="radio" /><input id="supervision.keypoint.core.KeyPoints--__tabbed_1_3" name="supervision.keypoint.core.KeyPoints--__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="supervision.keypoint.core.KeyPoints--__tabbed_1_1">Ultralytics</label><label for="supervision.keypoint.core.KeyPoints--__tabbed_1_2">Inference</label><label for="supervision.keypoint.core.KeyPoints--__tabbed_1_3">MediaPipe</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>Use <a href="/keypoint/core/#supervision.keypoint.core.KeyPoints.from_ultralytics"><code>sv.KeyPoints.from_ultralytics</code></a>
+<p>Use <a href="/latest/keypoint/core/#supervision.keypoint.core.KeyPoints.from_ultralytics"><code>sv.KeyPoints.from_ultralytics</code></a>
 method, which accepts <a href="https://github.com/ultralytics/ultralytics">YOLOv8</a>
 pose result.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span> <span class="nn">cv2</span>
@@ -2149,7 +2177,7 @@ pose result.</p>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<p>Use <a href="/keypoint/core/#supervision.keypoint.core.KeyPoints.from_inference"><code>sv.KeyPoints.from_inference</code></a>
+<p>Use <a href="/latest/keypoint/core/#supervision.keypoint.core.KeyPoints.from_inference"><code>sv.KeyPoints.from_inference</code></a>
 method, which accepts <a href="https://inference.roboflow.com/">Inference</a> pose result.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span> <span class="nn">cv2</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">import</span> <span class="nn">supervision</span> <span class="k">as</span> <span class="nn">sv</span>
@@ -2163,7 +2191,7 @@ method, which accepts <a href="https://inference.roboflow.com/">Inference</a> po
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<p>Use <a href="/keypoint/core/#supervision.keypoint.core.KeyPoints.from_mediapipe"><code>sv.KeyPoints.from_mediapipe</code></a>
+<p>Use <a href="/latest/keypoint/core/#supervision.keypoint.core.KeyPoints.from_mediapipe"><code>sv.KeyPoints.from_mediapipe</code></a>
 method, which accepts <a href="https://github.com/google-ai-edge/mediapipe">MediaPipe</a>
 pose result.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">import</span> <span class="nn">cv2</span>
@@ -2866,11 +2894,11 @@ is either a NumPy array or a list of corresponding data of length <code>n</code>
 <a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="sd">    The `sv.KeyPoints` class in the Supervision library standardizes results from</span>
 <a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="sd">    various keypoint detection and pose estimation models into a consistent format. This</span>
 <a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="sd">    class simplifies data manipulation and filtering, providing a uniform API for</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="sd">    integration with Supervision [keypoints annotators](/keypoint/annotators).</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="sd">    integration with Supervision [keypoints annotators](/latest/keypoint/annotators).</span>
 <a id="__codelineno-0-22" name="__codelineno-0-22"></a>
 <a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="sd">    === &quot;Ultralytics&quot;</span>
 <a id="__codelineno-0-24" name="__codelineno-0-24"></a>
-<a id="__codelineno-0-25" name="__codelineno-0-25"></a><span class="sd">        Use [`sv.KeyPoints.from_ultralytics`](/keypoint/core/#supervision.keypoint.core.KeyPoints.from_ultralytics)</span>
+<a id="__codelineno-0-25" name="__codelineno-0-25"></a><span class="sd">        Use [`sv.KeyPoints.from_ultralytics`](/latest/keypoint/core/#supervision.keypoint.core.KeyPoints.from_ultralytics)</span>
 <a id="__codelineno-0-26" name="__codelineno-0-26"></a><span class="sd">        method, which accepts [YOLOv8](https://github.com/ultralytics/ultralytics)</span>
 <a id="__codelineno-0-27" name="__codelineno-0-27"></a><span class="sd">        pose result.</span>
 <a id="__codelineno-0-28" name="__codelineno-0-28"></a>
@@ -2888,7 +2916,7 @@ is either a NumPy array or a list of corresponding data of length <code>n</code>
 <a id="__codelineno-0-40" name="__codelineno-0-40"></a>
 <a id="__codelineno-0-41" name="__codelineno-0-41"></a><span class="sd">    === &quot;Inference&quot;</span>
 <a id="__codelineno-0-42" name="__codelineno-0-42"></a>
-<a id="__codelineno-0-43" name="__codelineno-0-43"></a><span class="sd">        Use [`sv.KeyPoints.from_inference`](/keypoint/core/#supervision.keypoint.core.KeyPoints.from_inference)</span>
+<a id="__codelineno-0-43" name="__codelineno-0-43"></a><span class="sd">        Use [`sv.KeyPoints.from_inference`](/latest/keypoint/core/#supervision.keypoint.core.KeyPoints.from_inference)</span>
 <a id="__codelineno-0-44" name="__codelineno-0-44"></a><span class="sd">        method, which accepts [Inference](https://inference.roboflow.com/) pose result.</span>
 <a id="__codelineno-0-45" name="__codelineno-0-45"></a>
 <a id="__codelineno-0-46" name="__codelineno-0-46"></a><span class="sd">        ```python</span>
@@ -2905,7 +2933,7 @@ is either a NumPy array or a list of corresponding data of length <code>n</code>
 <a id="__codelineno-0-57" name="__codelineno-0-57"></a>
 <a id="__codelineno-0-58" name="__codelineno-0-58"></a><span class="sd">    === &quot;MediaPipe&quot;</span>
 <a id="__codelineno-0-59" name="__codelineno-0-59"></a>
-<a id="__codelineno-0-60" name="__codelineno-0-60"></a><span class="sd">        Use [`sv.KeyPoints.from_mediapipe`](/keypoint/core/#supervision.keypoint.core.KeyPoints.from_mediapipe)</span>
+<a id="__codelineno-0-60" name="__codelineno-0-60"></a><span class="sd">        Use [`sv.KeyPoints.from_mediapipe`](/latest/keypoint/core/#supervision.keypoint.core.KeyPoints.from_mediapipe)</span>
 <a id="__codelineno-0-61" name="__codelineno-0-61"></a><span class="sd">        method, which accepts [MediaPipe](https://github.com/google-ai-edge/mediapipe)</span>
 <a id="__codelineno-0-62" name="__codelineno-0-62"></a><span class="sd">        pose result.</span>
 <a id="__codelineno-0-63" name="__codelineno-0-63"></a>
@@ -3277,7 +3305,7 @@ is either a NumPy array or a list of corresponding data of length <code>n</code>
 <a id="__codelineno-0-429" name="__codelineno-0-429"></a><span class="sd">            results = model.predict(image, conf=0.1)</span>
 <a id="__codelineno-0-430" name="__codelineno-0-430"></a><span class="sd">            key_points = sv.KeyPoints.from_yolo_nas(results)</span>
 <a id="__codelineno-0-431" name="__codelineno-0-431"></a><span class="sd">            ```</span>
-<a id="__codelineno-0-432" name="__codelineno-0-432"></a><span class="sd">        &quot;&quot;&quot;</span>  <span class="c1"># noqa: E501 // docs</span>
+<a id="__codelineno-0-432" name="__codelineno-0-432"></a><span class="sd">        &quot;&quot;&quot;</span>
 <a id="__codelineno-0-433" name="__codelineno-0-433"></a>        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">yolo_nas_results</span><span class="o">.</span><span class="n">prediction</span><span class="o">.</span><span class="n">poses</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
 <a id="__codelineno-0-434" name="__codelineno-0-434"></a>            <span class="k">return</span> <span class="bp">cls</span><span class="o">.</span><span class="n">empty</span><span class="p">()</span>
 <a id="__codelineno-0-435" name="__codelineno-0-435"></a>
@@ -5219,7 +5247,7 @@ and class names, and confidences of each keypoint.</p>
 <a id="__codelineno-0-429" name="__codelineno-0-429"></a><span class="sd">        results = model.predict(image, conf=0.1)</span>
 <a id="__codelineno-0-430" name="__codelineno-0-430"></a><span class="sd">        key_points = sv.KeyPoints.from_yolo_nas(results)</span>
 <a id="__codelineno-0-431" name="__codelineno-0-431"></a><span class="sd">        ```</span>
-<a id="__codelineno-0-432" name="__codelineno-0-432"></a><span class="sd">    &quot;&quot;&quot;</span>  <span class="c1"># noqa: E501 // docs</span>
+<a id="__codelineno-0-432" name="__codelineno-0-432"></a><span class="sd">    &quot;&quot;&quot;</span>
 <a id="__codelineno-0-433" name="__codelineno-0-433"></a>    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">yolo_nas_results</span><span class="o">.</span><span class="n">prediction</span><span class="o">.</span><span class="n">poses</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
 <a id="__codelineno-0-434" name="__codelineno-0-434"></a>        <span class="k">return</span> <span class="bp">cls</span><span class="o">.</span><span class="n">empty</span><span class="p">()</span>
 <a id="__codelineno-0-435" name="__codelineno-0-435"></a>

@@ -15,14 +15,14 @@
         <link rel="canonical" href="https://supervision.roboflow.com/develop/detection/metrics/">
       
       
-        <link rel="prev" href="../../metrics/mean_average_precision/">
+        <link rel="prev" href="../../metrics/f1_score/">
       
       
         <link rel="next" href="../../utils/video/">
       
       
       <link rel="icon" href="../../assets/supervision-lenny.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.35">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.36">
     
     
       
@@ -30,7 +30,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.35f28582.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.06209087.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -1275,6 +1275,34 @@
   
   <span class="md-ellipsis">
     mAP
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--new"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/f1_score/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    F1 Score
   </span>
   
     
@@ -3021,8 +3049,8 @@ Detections with lower IoU will be classified as <code>FP</code>.</p>
 <a id="__codelineno-0-440" name="__codelineno-0-440"></a>        <span class="n">class_names</span> <span class="o">=</span> <span class="n">classes</span> <span class="k">if</span> <span class="n">classes</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">classes</span>
 <a id="__codelineno-0-441" name="__codelineno-0-441"></a>        <span class="n">use_labels_for_ticks</span> <span class="o">=</span> <span class="n">class_names</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="p">(</span><span class="mi">0</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">class_names</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">99</span><span class="p">)</span>
 <a id="__codelineno-0-442" name="__codelineno-0-442"></a>        <span class="k">if</span> <span class="n">use_labels_for_ticks</span><span class="p">:</span>
-<a id="__codelineno-0-443" name="__codelineno-0-443"></a>            <span class="n">x_tick_labels</span> <span class="o">=</span> <span class="n">class_names</span> <span class="o">+</span> <span class="p">[</span><span class="s2">&quot;FN&quot;</span><span class="p">]</span>
-<a id="__codelineno-0-444" name="__codelineno-0-444"></a>            <span class="n">y_tick_labels</span> <span class="o">=</span> <span class="n">class_names</span> <span class="o">+</span> <span class="p">[</span><span class="s2">&quot;FP&quot;</span><span class="p">]</span>
+<a id="__codelineno-0-443" name="__codelineno-0-443"></a>            <span class="n">x_tick_labels</span> <span class="o">=</span> <span class="p">[</span><span class="o">*</span><span class="n">class_names</span><span class="p">,</span> <span class="s2">&quot;FN&quot;</span><span class="p">]</span>
+<a id="__codelineno-0-444" name="__codelineno-0-444"></a>            <span class="n">y_tick_labels</span> <span class="o">=</span> <span class="p">[</span><span class="o">*</span><span class="n">class_names</span><span class="p">,</span> <span class="s2">&quot;FP&quot;</span><span class="p">]</span>
 <a id="__codelineno-0-445" name="__codelineno-0-445"></a>            <span class="n">num_ticks</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">x_tick_labels</span><span class="p">)</span>
 <a id="__codelineno-0-446" name="__codelineno-0-446"></a>        <span class="k">else</span><span class="p">:</span>
 <a id="__codelineno-0-447" name="__codelineno-0-447"></a>            <span class="n">x_tick_labels</span> <span class="o">=</span> <span class="kc">None</span>
@@ -4566,8 +4594,8 @@ If not provided, all classes will be displayed.</p>
 <a id="__codelineno-0-440" name="__codelineno-0-440"></a>    <span class="n">class_names</span> <span class="o">=</span> <span class="n">classes</span> <span class="k">if</span> <span class="n">classes</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">classes</span>
 <a id="__codelineno-0-441" name="__codelineno-0-441"></a>    <span class="n">use_labels_for_ticks</span> <span class="o">=</span> <span class="n">class_names</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="p">(</span><span class="mi">0</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">class_names</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">99</span><span class="p">)</span>
 <a id="__codelineno-0-442" name="__codelineno-0-442"></a>    <span class="k">if</span> <span class="n">use_labels_for_ticks</span><span class="p">:</span>
-<a id="__codelineno-0-443" name="__codelineno-0-443"></a>        <span class="n">x_tick_labels</span> <span class="o">=</span> <span class="n">class_names</span> <span class="o">+</span> <span class="p">[</span><span class="s2">&quot;FN&quot;</span><span class="p">]</span>
-<a id="__codelineno-0-444" name="__codelineno-0-444"></a>        <span class="n">y_tick_labels</span> <span class="o">=</span> <span class="n">class_names</span> <span class="o">+</span> <span class="p">[</span><span class="s2">&quot;FP&quot;</span><span class="p">]</span>
+<a id="__codelineno-0-443" name="__codelineno-0-443"></a>        <span class="n">x_tick_labels</span> <span class="o">=</span> <span class="p">[</span><span class="o">*</span><span class="n">class_names</span><span class="p">,</span> <span class="s2">&quot;FN&quot;</span><span class="p">]</span>
+<a id="__codelineno-0-444" name="__codelineno-0-444"></a>        <span class="n">y_tick_labels</span> <span class="o">=</span> <span class="p">[</span><span class="o">*</span><span class="n">class_names</span><span class="p">,</span> <span class="s2">&quot;FP&quot;</span><span class="p">]</span>
 <a id="__codelineno-0-445" name="__codelineno-0-445"></a>        <span class="n">num_ticks</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">x_tick_labels</span><span class="p">)</span>
 <a id="__codelineno-0-446" name="__codelineno-0-446"></a>    <span class="k">else</span><span class="p">:</span>
 <a id="__codelineno-0-447" name="__codelineno-0-447"></a>        <span class="n">x_tick_labels</span> <span class="o">=</span> <span class="kc">None</span>
