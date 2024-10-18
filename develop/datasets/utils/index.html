@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../assets/supervision-lenny.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.39">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.41">
     
     
       
@@ -30,7 +30,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.8c3ca2c6.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -1272,9 +1272,36 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#supervision.dataset.utils.rle_to_mask(rle)" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-parameter"></code>&nbsp;rle
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supervision.dataset.utils.rle_to_mask(resolution_wh)" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-parameter"></code>&nbsp;resolution_wh
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#supervision.dataset.utils.mask_to_rle" class="md-nav__link">
     <span class="md-ellipsis">
       <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;mask_to_rle
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supervision.dataset.utils.mask_to_rle(mask)" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-parameter"></code>&nbsp;mask
     </span>
   </a>
   
@@ -1370,11 +1397,95 @@
   
   
     <li class="md-nav__item">
+      <a href="../../metrics/precision/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Precision
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--new"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/recall/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Recall
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--new"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../metrics/f1_score/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     F1 Score
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--new"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/common_values/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Common Values
   </span>
   
     
@@ -1919,9 +2030,36 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#supervision.dataset.utils.rle_to_mask(rle)" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-parameter"></code>&nbsp;rle
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supervision.dataset.utils.rle_to_mask(resolution_wh)" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-parameter"></code>&nbsp;resolution_wh
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#supervision.dataset.utils.mask_to_rle" class="md-nav__link">
     <span class="md-ellipsis">
       <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;mask_to_rle
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supervision.dataset.utils.mask_to_rle(mask)" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-parameter"></code>&nbsp;mask
     </span>
   </a>
   
@@ -1981,9 +2119,11 @@
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>rle</code></td>
             <td>
-                  <code><span title="typing.Union">Union</span>[<span title="numpy.typing.NDArray">NDArray</span>[<span title="numpy.int_">int_</span>], <span title="typing.List">List</span>[int]]</code>
+<h2 id="supervision.dataset.utils.rle_to_mask(rle)" class="doc doc-heading doc-heading-parameter">                  <code>rle</code>
+<a href="#supervision.dataset.utils.rle_to_mask(rle)" class="headerlink" title="Permanent link">&para;</a></h2>            </td>
+            <td>
+                  <code>Union[NDArray[int_], List[int]]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -1999,9 +2139,11 @@ assigned as foreground object).</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>resolution_wh</code></td>
             <td>
-                  <code><span title="typing.Tuple">Tuple</span>[int, int]</code>
+<h2 id="supervision.dataset.utils.rle_to_mask(resolution_wh)" class="doc doc-heading doc-heading-parameter">                  <code>resolution_wh</code>
+<a href="#supervision.dataset.utils.rle_to_mask(resolution_wh)" class="headerlink" title="Permanent link">&para;</a></h2>            </td>
+            <td>
+                  <code>Tuple[int, int]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -2028,7 +2170,7 @@ of the desired binary mask.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                  <code><span title="numpy.typing.NDArray">NDArray</span>[<span title="numpy.bool_">bool_</span>]</code>
+                  <code>NDArray[bool_]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -2218,9 +2360,11 @@ number of pixels in the expected mask (computed based on resolution_wh).</p>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>mask</code></td>
             <td>
-                  <code><span title="numpy.typing.NDArray">NDArray</span>[<span title="numpy.bool_">bool_</span>]</code>
+<h2 id="supervision.dataset.utils.mask_to_rle(mask)" class="doc doc-heading doc-heading-parameter">                  <code>mask</code>
+<a href="#supervision.dataset.utils.mask_to_rle(mask)" class="headerlink" title="Permanent link">&para;</a></h2>            </td>
+            <td>
+                  <code>NDArray[bool_]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -2247,7 +2391,7 @@ object and <code>False</code> indicates background.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                  <code><span title="typing.List">List</span>[int]</code>
+                  <code>List[int]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -2686,7 +2830,7 @@ as foreground object (<code>True</code>).</p>
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "content.code.copy", "content.action.edit", "content.tooltips", "content.code.annotate", "navigation.tabs"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.525ec568.min.js"></script>
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
         <script src="https://widget.kapa.ai/kapa-widget.bundle.js"></script>
       

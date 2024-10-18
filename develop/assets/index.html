@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="supervision-lenny.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.39">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.41">
     
     
       
@@ -30,7 +30,7 @@
       
     
     
-      <link rel="stylesheet" href="stylesheets/main.8c3ca2c6.min.css">
+      <link rel="stylesheet" href="stylesheets/main.0253249f.min.css">
       
         
         <link rel="stylesheet" href="stylesheets/palette.06af60db.min.css">
@@ -1310,11 +1310,95 @@
   
   
     <li class="md-nav__item">
+      <a href="../metrics/precision/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Precision
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--new"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metrics/recall/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Recall
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--new"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../metrics/f1_score/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     F1 Score
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--new"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metrics/common_values/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Common Values
   </span>
   
     
@@ -1618,6 +1702,15 @@
   <a href="#supervision.assets.downloader.download_assets" class="md-nav__link">
     <span class="md-ellipsis">
       <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;download_assets
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supervision.assets.downloader.download_assets(asset_name)" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-parameter"></code>&nbsp;asset_name
     </span>
   </a>
   
@@ -1935,6 +2028,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#supervision.assets.downloader.download_assets(asset_name)" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-parameter"></code>&nbsp;asset_name
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#supervision.assets.list.VideoAssets" class="md-nav__link">
     <span class="md-ellipsis">
       <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;VideoAssets
@@ -2007,9 +2109,11 @@ as an extra within the Supervision package.</p>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>asset_name</code></td>
             <td>
-                  <code><span title="typing.Union">Union</span>[<a class="autorefs autorefs-internal" title="supervision.assets.list.VideoAssets" href="#supervision.assets.list.VideoAssets">VideoAssets</a>, str]</code>
+<h2 id="supervision.assets.downloader.download_assets(asset_name)" class="doc doc-heading doc-heading-parameter">                  <code>asset_name</code>
+<a href="#supervision.assets.downloader.download_assets(asset_name)" class="headerlink" title="Permanent link">&para;</a></h2>            </td>
+            <td>
+                  <code>Union[VideoAssets, str]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -2178,7 +2282,7 @@ downloaded.</p>
 <a id="supervision.assets.list.VideoAssets"></a>
     <div class="doc doc-contents first">
             <p class="doc doc-class-bases">
-              Bases: <code><span title="enum.Enum">Enum</span></code></p>
+              Bases: <code>Enum</code></p>
 
 
         <p>Each member of this enum represents a video asset. The value associated with each
@@ -2239,6 +2343,11 @@ member is the filename of the video.</p>
 </tr>
 </tbody>
 </table>
+
+
+
+
+
 
               <details class="quote">
                 <summary>Source code in <code>supervision/assets/list.py</code></summary>
@@ -2588,7 +2697,7 @@ member is the filename of the video.</p>
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tracking", "content.code.copy", "content.action.edit", "content.tooltips", "content.code.annotate", "navigation.tabs"], "search": "javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="javascripts/bundle.525ec568.min.js"></script>
+      <script src="javascripts/bundle.83f73b43.min.js"></script>
       
         <script src="https://widget.kapa.ai/kapa-widget.bundle.js"></script>
       
